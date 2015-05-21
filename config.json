@@ -33,7 +33,7 @@
         "cddid_all": "/proj/b2010008/nobackup/database/cddid_all.tbl",
         "prokka_ops": "--metagenome",
         "contigs": {},
-        "threads": "4"
+        "threads": "2"
     },
     "rpsblast_rules": {
         "load_env": "module load bioinfo-tools blast/2.2.29+ gnuparallel/20140222",
