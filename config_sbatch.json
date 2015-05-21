@@ -1,6 +1,6 @@
 {
     "sbatch_general": {
-        "account": "b2010008",
+        "account": "b2014227",
         "wrapper_script": "/proj/b2010008/bin/sbatch_job"
     },
     "schedule_default": {
@@ -170,5 +170,8 @@
     "schedule_concoct_cutup_gz_10K": "schedule_concoct_cutup_10K",
     "schedule_build_index_all": "schedule_short",
     "schedule_map_10K_all_first": "schedule_short"
-
+    "schedule_prokka_extended_run": "schedule_two_cores_medium",
+    "schedule_prokka_extended_run_rpsblast": "schedule_two_cores_medium",
+    "schedule_prokka_extended_output": "schedule_short",
+    "schedule_prokka_extended_all": "schedule_short"
 }
