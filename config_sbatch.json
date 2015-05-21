@@ -1,0 +1,174 @@
+{
+    "sbatch_general": {
+        "account": "b2010008",
+        "wrapper_script": "/proj/b2010008/bin/sbatch_job"
+    },
+    "schedule_default": {
+        "days": 0,
+        "hours": 0,
+        "minutes": 5,
+        "partition": "core",
+        "cores": "1",
+        "extra_parameters": ""
+    },
+    "schedule_short": {
+        "days": 0,
+        "hours": 0,
+        "minutes": 15,
+        "partition": "core",
+        "cores": "1",
+        "extra_parameters": ""
+    },
+    "schedule_two_cores_medium": {
+        "days": 0,
+        "hours": 12,
+        "minutes": 0,
+        "partition": "core",
+        "cores": "2",
+        "extra_parameters": ""
+    },
+    "schedule_all": "schedule_default",
+    "schedule_concoct_cutup_10K_all": "schedule_default",
+    "schedule_concoct_map_10K_all": "schedule_default",
+    "schedule_concoct_inputtable_10K_all": "schedule_default",
+    "schedule_concoct_cutup_10K": {
+        "days": 0,
+        "hours": 0,
+        "minutes": 5,
+        "partition": "core",
+        "cores": "1",
+        "extra_parameters": ""
+    },
+    "schedule_concoct_generate_coverage_table_10K": "schedule_two_cores_medium",
+    "schedule_concoct_run_10K": {
+        "days": 3,
+        "hours": 0,
+        "minutes": 0,
+        "partition": "core",
+        "cores": "11",
+        "extra_parameters": ""
+    },
+    "schedule_concoct_run_10K_all": "schedule_default",
+    "schedule_bowtie2_index": {
+        "days": 0,
+        "hours": 2,
+        "minutes": 0,
+        "partition": "core",
+        "cores": "1",
+        "extra_parameters": ""
+    },
+    "schedule_bowtie2_map": {
+        "days": 2,
+        "hours": 0,
+        "minutes": 0,
+        "partition": "core",
+        "cores": "1",
+        "extra_parameters": ""
+    },
+    "schedule_bowtie2_map_fasta": {
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "partition": "core",
+        "cores": "4",
+        "extra_parameters": ""
+    },
+    "schedule_remove_mark_duplicates": {
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "partition": "core",
+        "cores": "6",
+        "extra_parameters": ""
+    },
+    "schedule_bedtools_coverage": {
+        "days": 0,
+        "hours": 6,
+        "minutes": 0,
+        "partition": "core",
+        "cores": "1",
+        "extra_parameters": ""
+    },
+    "schedule_bam_sort": {
+        "days": 0,
+        "hours": 12,
+        "minutes": 0,
+        "partition": "core",
+        "cores": "1",
+        "extra_parameters": ""
+    },
+    "schedule_rpsblast_run": {
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "partition": "core",
+        "cores": "14",
+        "extra_parameters": ""
+    },
+    "schedule_hmmer_run": {
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "partition": "core",
+        "cores": "16",
+        "extra_parameters": ""
+    },
+    "schedule_trimmomatic_pe": {
+        "days": 0,
+        "hours": 12,
+        "minutes": 0,
+        "partition": "node",
+        "cores": "16",
+        "extra_parameters": ""
+    },
+    "schedule_ray_assembly": {
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "partition": "node",
+        "cores": "64",
+        "extra_parameters": ""
+    },
+    "schedule_merge_newbler": {
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "partition": "node",
+        "cores": "8",
+        "extra_parameters": ""
+    },
+    "schedule_fastqc": "schedule_bowtie2_index",
+    "schedule_create_read_symlink": "schedule_short",
+    "schedule_ray_assembly_all": "schedule_short",
+    "schedule_merge_newbler_all": "schedule_short",
+    "schedule_fastqc_all": "schedule_short",
+    "schedule_trimmomatic_all": "schedule_short",
+    "schedule_rpsblast_run_all": "schedule_default",
+    "schedule_hmmer_run_all": "schedule_default",
+    "schedule_prodigal_run": "schedule_bedtools_coverage",
+    "schedule_prodigal_run_all": "schedule_default",
+    "schedule_bam_sort_name": "schedule_bam_sort",
+    "schedule_bam_index": "schedule_short",
+    "schedule_sam_to_bam": "schedule_short",
+    "schedule_bam_stats": "schedule_short",
+    "schedule_fasta_dict": "schedule_short",
+    "schedule_fasta_index": "schedule_short",
+    "schedule_bam_measure_insert_size": "schedule_bowtie2_map",
+    "schedule_sample_merge": "schedule_bowtie2_map",
+    "schedule_concoct_eval_cog_table": "schedule_bedtools_coverage",
+    "schedule_concoct_eval_cog_plot": "schedule_short",
+    "schedule_concoct_eval_cog_plot_all": "schedule_short",
+    "schedule_concoct_eval_cog_plot_merged": "schedule_short",
+    "schedule_concoct_eval_all": "schedule_short",
+    "schedule_merge_concoct_results": "schedule_short",
+    "schedule_concoct_eval_cog_table_merged": "schedule_bedtools_coverage",
+    "schedule_concoct_extract_approved_scg_bins_all_merged": "schedule_short",
+    "schedule_concoct_extract_approved_scg_bins_merged": "schedule_short",
+    "schedule_concoct_dnadiff_dist_matrix_merged": "schedule_trimmomatic_pe",
+    "schedule_concoct_dnadiff_dist_matrix": "schedule_trimmomatic_pe",
+    "schedule_concoct_dnadiff_dist_matrix_mags": "schedule_trimmomatic_pe",
+    "schedule_concoct_cutup_gz_10K": "schedule_concoct_cutup_10K",
+    "schedule_build_index_all": "schedule_short",
+    "schedule_map_10K_all_first": "schedule_short"
+
+}

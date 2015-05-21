@@ -1,0 +1,8 @@
+data/contigs*
+data/reads*
+blast/*
+fastqc/*
+concoct/*
+mapping/*
+annotation/*
+.snakemake/*
