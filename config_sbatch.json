@@ -169,7 +169,7 @@
     "schedule_concoct_dnadiff_dist_matrix_mags": "schedule_trimmomatic_pe",
     "schedule_concoct_cutup_gz_10K": "schedule_concoct_cutup_10K",
     "schedule_build_index_all": "schedule_short",
-    "schedule_map_10K_all_first": "schedule_short"
+    "schedule_map_10K_all_first": "schedule_short",
     "schedule_prokka_extended_run": "schedule_two_cores_medium",
     "schedule_prokka_extended_run_rpsblast": "schedule_two_cores_medium",
     "schedule_prokka_extended_output": "schedule_short",
