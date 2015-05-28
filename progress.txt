@@ -1,0 +1,1 @@
+Finished running prokka extended for all good bins. Will now continue with generating annotation table.
