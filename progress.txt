@@ -1,1 +1,3 @@
 Finished running prokka extended for all good bins. Will now continue with generating annotation table.
+Finished generating summary table for prokka extended annotation, with COG,
+PFAM, TIGR
