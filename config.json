@@ -34,6 +34,8 @@
         "EXTEND": {
             "gff": "toolbox/scripts/extended_prokka/extend_gff.py"
         },
+        "get_prokka_annotation_script": "toolbox/scripts/extended_prokka/get.prokka.annotation.sh",
+        "collate_annotations_script": "toolbox/scripts/extended_prokka/collate.annotations.py",
         "prokka_ops": "--metagenome",
         "contigs": {},
         "threads": "2"
