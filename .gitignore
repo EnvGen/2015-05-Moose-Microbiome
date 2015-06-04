@@ -5,4 +5,5 @@ fastqc/*
 concoct/*
 mapping/*
 annotation/*
+checkm/*
 .snakemake*
