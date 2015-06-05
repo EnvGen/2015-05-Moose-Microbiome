@@ -27,6 +27,14 @@ for contigs_f in glob.glob("concoct/approved_scg_bins/*.fa"):
     contigs = contigs_f.split('/')[-1].split('.')[0]
     config["prokka_extended_rules"]["contigs"][contigs] = contigs_f
 
+config["assemblies"] = []
+for assembly_dir in config["assembly_dir"]:
+    for assembly in os.listdir(assembly_dir):
+        config["assemblies"].append(os.path.join(assembly_dir,assembly))
+
+# add assemblies to concoct assemblies
+config["concoct_rules"]["assemblies"] = {os.path.basename(p).replace(".fasta", ""): p for p in config["assemblies"]}
+
 SM_WORKFLOW_LOC="snakemake-workflows/"
 include: SM_WORKFLOW_LOC + "bio/ngs/rules/annotation/prokka.rules"
-
+include: SM_WORKFLOW_LOC + "bio/ngs/rules/binning/concoct_eval.rules"
